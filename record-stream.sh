@@ -16,11 +16,11 @@ while true; do
 	ffmpeg \
 		-hide_banner -y \
 		-loglevel error \
-		-vcodec copy \
-		-acodec copy \
 		-rtsp_transport tcp \
 		-use_wallclock_as_timestamps 1 \
 		-i "rtsp://$remoteAddr:554/user=admin&password=&channel=0&stream=0.sdp" \
+		-vcodec copy \
+		-acodec copy \
 		-f segment \
 		-reset_timestamps 1 \
 		-segment_time 1800 \
