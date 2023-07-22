@@ -9,7 +9,6 @@ remoteAddr=$1
 mkdir -p data
 cd data
 
-# loop infinitely
 while true; do
 
 	echo "Starting ffmpeg to record stream from $remoteAddr"
