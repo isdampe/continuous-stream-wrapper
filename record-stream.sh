@@ -1,7 +1,7 @@
 #!/bin/bash
 if [ $# -ne 1 ]; then
-  echo "Usage: ./record-stream.sh [ip-address]"
-  exit 1
+	echo "Usage: ./record-stream.sh [ip-address]"
+	exit 1
 fi
 
 remoteAddr=$1
