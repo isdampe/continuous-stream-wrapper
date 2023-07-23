@@ -1,3 +1,8 @@
+# Dependencies
+
+- `socat`
+- `ffmpeg`
+
 All files are written to `./data/[ip-address]-Y-m-d_H:M:S.mkv` and chunked in sections of 30 minutes.
 
 # Recording streams
