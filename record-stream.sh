@@ -14,8 +14,7 @@ while true; do
 	echo "Starting ffmpeg to record stream from $remoteAddr"
 	ffmpeg \
 		-hide_banner -y \
-		-loglevel error \
-		-stimeout 30000000 \
+		-loglevel warning \
 		-rtsp_transport tcp \
 		-use_wallclock_as_timestamps 1 \
 		-i "rtsp://$remoteAddr:554/user=admin&password=&channel=0&stream=0.sdp" \
