@@ -1,3 +1,4 @@
+#!/bin/bash
 pids=$(ps aux | grep ffmpeg | grep "192.168" | awk '{print $2}')
 pids_array=($pids)
 
