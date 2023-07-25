@@ -16,6 +16,7 @@ while true; do
 		-hide_banner -y \
 		-loglevel warning \
 		-rtsp_transport tcp \
+		-stimeout 30000000 \ 
 		-use_wallclock_as_timestamps 1 \
 		-i "rtsp://$remoteAddr:554/user=admin&password=&channel=0&stream=0.sdp" \
 		-r 25 \
