@@ -15,7 +15,8 @@ for pid in "${pids_array[@]}"; do
 
 	# ffmpeg is probably stuck...
 	if [ "$time_elapsed" -gt 30 ]; then
-		echo "Process $pid hasn't written it's file for $time_elapsed seconds. Killing process."
+		echo "Process $pid for $fp hasn't written it's file for $time_elapsed seconds. Killing process."
+		echo "Process $pid for $fp hasn't written it's file for $time_elapsed seconds. Killing process." >> ffmpeg-hang.log
 		kill $pid
 	fi
 done
