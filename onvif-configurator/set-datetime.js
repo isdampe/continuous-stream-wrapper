@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 const Cam = require('onvif').Cam;
 
 Date.prototype.stdTimezoneOffset = function () {
