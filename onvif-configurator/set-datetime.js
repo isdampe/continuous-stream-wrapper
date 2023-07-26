@@ -35,6 +35,8 @@ new Cam({
 	}, function(err, results, xml) {
 		if (err)
 			throw new Error(err);
+
+		console.log("The time was set to " + results);
 	});
 
 });
