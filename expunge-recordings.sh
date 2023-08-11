@@ -12,3 +12,4 @@ if [ ! -d "./data" ]; then
 fi
 
 find ./data -name "$remoteAddr-*.mkv" -mtime +$numberOfDays -exec rm {} \;
+find ./data -name "$remoteAddr-*.jpg" -mtime +$numberOfDays -exec rm {} \;
