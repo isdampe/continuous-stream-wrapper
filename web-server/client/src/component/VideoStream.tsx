@@ -12,7 +12,7 @@ export function VideoStream({ url }: TProps) {
 	useEffect(() => {
 		if (canvasRef.current) {
 			(window as any).loadPlayer({
-				url: `${url}/${size}`,
+				url: `${url}/full`,
 				canvas: canvasRef.current
 			});
 		}
